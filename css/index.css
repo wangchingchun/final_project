@@ -1,0 +1,249 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  .header {
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 5px;
+  text-align: center;
+  border-bottom: 2px solid black;
+  position: relative; /* Added to position the menu-icon absolutely within the header */
+  }
+
+  .menu-icon {
+    font-size: 30px; /* Increase the size as needed */
+    position: absolute;
+    top: 20px; /* Adjust top and left as needed to prevent overlap */
+    left: 30px;
+    cursor: pointer;
+    z-index: 2; /* Ensure the icon is above other elements */
+  }
+
+  /* Adding media query for responsive adjustments */
+  @media screen and (max-width: 768px) {
+    .header h2 {
+      font-size: 14px; /* Reduce the font size on smaller screens */
+      margin-left: 30px; /* Add left margin to give space for menu icon */
+      margin-top:10px;
+    }
+    .menu-icon{
+      font-size: 15px;
+      position:absolute;
+      top:15px;
+      left:10px;
+    }
+  }
+  .main-content {
+    padding: 10px 30px;
+    width: 95%;
+    /* Adjust the padding or margins as needed */
+  }
+  .side-menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #f1f1f1;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  .side-menu a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  .side-menu a:hover {
+    color: #000000;
+  }
+  .close-btn {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    font-size: 36px;
+    margin-left: 50px;
+    cursor: pointer;
+  }
+  .event-info {
+  margin-top: 30px; /* Adds space between the image and the event info */
+  padding: 20px;
+  background-color: #f9f9f9; /* Light background for the event info area */
+  border-top: 2px solid #ccc; /* Adds a line to separate from the image */
+  }
+
+  .event-info h2 {
+    color: #333; /* Dark text for headings */
+    margin-bottom: 10px;
+    margin-top: 0px;
+  }
+
+  .event-info p {
+    font-size: 16px;
+    color: #000000; /* Lighter text for paragraph */
+  }
+
+  .event-info {
+  display: flex; /* Use flexbox to create a flexible layout */
+  }
+
+  .event-text {
+    flex: 60%; /* Allocate 60% of the space to the text */
+  }
+
+  .event-text ol {
+    color: #666;
+    line-height: 30px;
+  }
+
+  .event-image {
+    flex: 40%; /* Allocate 40% of the space to the image */
+    padding-left: 20px; /* Optional spacing between text and image */
+  }
+
+  /* Ensure the image is responsive */
+  .event-image img {
+    width: 100%;
+    height: auto;
+    max-width: 100%; /* Make sure the image is not bigger than its container */
+  }
+
+  /* Consider adding responsiveness for mobile devices */
+  @media screen and (max-width: 768px) {
+    .event-info {
+      flex-direction: column; /* Stack the text and image on small screens */
+    }
+
+    .event-text,
+    .event-image {
+      flex: 100%; /* Allow each to take the full width on small screens */
+    }
+
+    .event-image {
+      padding-left: 0; /* Remove the spacing on small screens */
+    }
+  }
+  .activity-flow {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+  padding: 20px; /* Consistent padding for better spacing */
+  }
+
+  .flow-images {
+    display: flex;
+    flex-wrap: wrap; /* Allows images to wrap on smaller screens */
+    justify-content: space-around; /* Adds space between the images */
+  }
+
+  .flow-images img {
+    max-width: 45%; /* Reduced for a smaller overall presence on larger screens */
+    height: auto;
+    margin: 10px; /* Adds margin around images */
+    border-radius: 8px; /* Rounded corners for a softer look */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2); /* Shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transitions for interaction */
+  }
+
+  .flow-images img:hover {
+    transform: scale(1.03); /* Enlarges the image on hover */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3); /* Lifted effect on hover */
+  }
+
+  /* Responsive adjustments for mobile screens */
+    @media screen and (max-width: 768px) {
+  .flow-images {
+    flex-direction: column; /* Stack images vertically */
+    align-items: center; /* Align images to the center */
+  }
+  
+  .flow-images img {
+    max-width: 100%; /* Ensure images are not larger than their container */
+    margin: 0 0 15px 0; /* No side margins, just bottom margin between images */
+    box-shadow: none; /* Optional: Remove shadow on mobile for a cleaner look */
+  }
+
+  .activity-flow {
+    padding: 0; /* No padding to allow images to use all available space */
+  }
+}
+.registration-info {
+    background-color: #f0f0f0; /* Light grey background for the section */
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+  }
+  
+  .registration-info h2 {
+    color: #333333; /* Dark grey for contrast */
+    margin-bottom: 15px;
+  }
+  
+  .registration-info p, .registration-info ol {
+    font-size: 16px; /* Slightly larger font for readability */
+    line-height: 1.6; /* Improved line spacing */
+    color: #333333;
+  }
+  
+  .registration-info a {
+    color: #0056b3; /* Standard link color */
+    text-decoration: underline;
+  }
+  
+  .registration-info ol {
+    padding-left: 20px; /* Indent for ordered list */
+    margin-top: 5px;
+  }
+
+  .footer {
+    background-color: #f2f2f2; /* Light grey background for the footer */
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #e1e1e1; /* Subtle top border */
+  }
+  
+  .footer-content {
+    max-width: 1000px; /* Adjust as needed */
+    margin: 0 auto; /* Center the content */
+  }
+  
+  .footer-row {
+    flex-wrap: wrap; /* Wrap onto the next line on smaller screens */
+    display: flex;
+    justify-content: center;
+    text-align:center;
+  }
+  
+  .footer-row p {
+    flex: 1; /* Each <p> tag in a row takes equal space */
+    margin: 5px 10px; /* Spacing between items */
+  }
+  
+  .footer-content p {
+    color: #333; /* Dark grey text for readability */
+    font-size: 16px; /* Slightly larger font size for better readability */
+  }
+  
+  .footer-content a {
+    color: #0056b3; /* Standard link color */
+    text-decoration: underline; /* Underlined links for clarity */
+  }
+  @media screen and (max-width: 768px) {
+    .footer-row {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-row p {
+      flex-basis: 100%; /* Take full width on smaller screens */
+      text-align: center;
+    }
+  }
+  
