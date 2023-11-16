@@ -1,0 +1,96 @@
+.header, .footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f1f1f1;
+    margin-bottom: 20px;
+}
+.menu-icon {
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+  .main-title-1{
+    text-align: center; 
+    margin-bottom: 30px; /* 标题和内容之间的间隔 */
+    border: 3px solid rgb(255, 89, 0);
+    background-color: #e4d597;
+  }
+  .main-title-2 {
+    text-align: center; /* 置中标题 */
+    font-size: 24px; /* 标题字体大小 */
+    margin-bottom: 30px; /* 标题和内容之间的间隔 */
+    border: 3px solid #f0f0f0; /* 标题边框 */
+    padding: 20px; /* 标题内边距 */
+    margin: 20px 0; /* 标题外边距 */
+    background-color: #f0f0f0;
+  }
+  
+  .box-1, .box-2, .box-3 {
+    padding: 20px; /* 内边距 */
+    margin: 10px; /* 边框与边框之间的间隔 */
+    display: inline-block; /* 使元素呈现为行内块 */
+    line-height: 1.6; /* 增加行距 */
+  }
+  
+  .box-1 {
+    border: 3px solid #f6ae2d; /* 橙色边框 */
+    background-color: #f6ae2d; /* 橙色背景 */
+  }
+  
+  .box-2 {
+    border: 3px solid #758e4f; /* 绿色边框 */
+    background-color: #758e4f; /* 绿色背景 */
+  }
+  
+  .box-3 {
+    border: 3px solid #86bbd8; /* 蓝色边框 */
+    background-color: #86bbd8; /* 蓝色背景 */
+  }
+  
+  .content {
+    text-align: center; /* 内容置中 */
+  }
+
+  .content div {
+    display: inline-block; /* 内容以行内块显示 */
+    margin: 0 20px; /* 内容之间的间隔 */
+  }
+.grid-item {
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.grid-item:hover {
+    transform: scale(1.1);
+    z-index: 10;
+}
+.grid-link {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.5em;
+}
+/* 定制的布局 */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 创建三列等宽 */
+    grid-template-rows: repeat(4, 1fr); /* 创建四行等高 */
+    grid-gap: 10px; /* 格子之间的间隙 */
+  }
+  
+  /* 调整每个项目的网格区域 */
+  .item1 { grid-column: 1 / 2; grid-row: 1 / 2; border: 3px solid #f6ae2d; }
+  .item2 { grid-column: 2 / 3; grid-row: 1 / 2; border: 3px solid #758e4f; }
+  .item3 { grid-column: 3 / 4; grid-row: 1 / 2; border: 3px solid #758e4f; }
+  .item4 { grid-column: 1 / 2; grid-row: 2 / 3; border: 3px solid #86bbd8;}
+  .item5 { grid-column: 2 / 3; grid-row: 2 / 3; border: 3px solid #f6ae2d; }
+  .item6 { grid-column: 3 / 4; grid-row: 2 / 3; border: 3px solid #758e4f; }
+  .item7 { grid-column: 1 / 2; grid-row: 3 / 4; border: 3px solid #86bbd8;}
+  .item8 { grid-column: 2 / 3; grid-row: 3 / 4; border: 3px solid #f6ae2d; }
+  .item9 { grid-column: 3 / 4; grid-row: 3 / 4; border: 3px solid #758e4f; }
+  .item10 { grid-column: 1 / 4; grid-row: 4 / 5; border: 3px solid #86bbd8;} /* 第十个项目占据最后一行所有列 */

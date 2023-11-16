@@ -1,0 +1,95 @@
+.content-block {
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.main-content h2 {
+    margin: 15px 0;
+    font-size: 26px;
+    color: #333;
+}
+
+
+
+.image-block {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.image-block img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* 添加鼠标悬停效果 */
+.image-block:hover {
+    transform: scale(1.1);
+}
+.content-block {
+    border: 2px solid #f6ae2d; /* 使边框更粗，并设置为深色 */
+    margin: 10px 0; /* 添加上下外边距，侧边不变 */
+    padding: 20px; /* 内边距保持不变 */
+    background-color: #fff; /* 背景颜色设置为白色 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* 可选：添加轻微的阴影效果 */
+}
+.content-block h3 {
+    margin-bottom: 0.5em; /* 调整标题与文本内容之间的距离 */
+    color: #333; /* 标题颜色 */
+}
+.comment-section {
+    margin: 20px 0;
+    padding: 15px;
+}
+
+
+.message-board {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #f0f0f0;
+}
+
+.message-board {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #f0f0f0;
+}
+.publish-box {
+    /* 根据需要调整样式 */
+    text-align: center;
+    margin-top: 10px;
+}
+
+.publish-link {
+    /* 根据需要调整样式 */
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: blue; /* 设置背景颜色 */
+    color: white; /* 设置文字颜色 */
+    border: 2px solid blue; /* 设置边框颜色 */
+    border-radius: 4px; /* 边框圆角 */
+    text-decoration: none; /* 去掉下划线 */
+    font-size: 14px; /* 文字大小 */
+    cursor: pointer; /* 鼠标悬停时的手势 */
+}
+
+.publish-link:hover {
+    background-color: darkblue; /* 鼠标悬停时的背景颜色变化 */
+}
+.message {
+    border: 2px solid #333; /* 粗框 */
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.message-header {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.message-content {
+    color: #555;
+}
+

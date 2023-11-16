@@ -1,0 +1,83 @@
+.content-block {
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.main-content h2 {
+    margin: 15px 0;
+    font-size: 26px;
+    color: #333;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px;
+}
+
+.button:hover {
+    background-color: #367c39;
+}
+
+.image-block {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.image-block img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* 添加鼠标悬停效果 */
+.image-block:hover {
+    transform: scale(1.1);
+}
+.content-block-1 {
+    border: 2px solid #f6ae2d; /* 使边框更粗，并设置为深色 */
+    margin: 10px 0; /* 添加上下外边距，侧边不变 */
+    padding: 20px; /* 内边距保持不变 */
+    background-color: #fff; /* 背景颜色设置为白色 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* 可选：添加轻微的阴影效果 */
+}
+.content-block-2 {
+    border: 3px solid #f0f0f0;
+    margin: 10px 0; /* 添加上下外边距，侧边不变 */
+    padding: 20px; /* 内边距保持不变 */
+    background-color: #f0f0f0; 
+}
+.content-block-1 h3 {
+    margin-bottom: 0.5em; /* 调整标题与文本内容之间的距离 */
+    color: #333; /* 标题颜色 */
+    text-align: center;
+}
+.comment-section {
+    margin: 20px 0;
+    padding: 15px;
+}
+.comment-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.submit-button {
+    padding: 10px 15px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #367c39;
+}
