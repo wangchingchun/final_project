@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mobile Webpage Example</title>
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<link rel="stylesheet" type="text/css" href="css/game.css">
+</head>
+<body>
+
+    <div class="header">
+        <span class="menu-icon" onclick="toggleMenu()">&#9776;</span>
+        <h2>2023全國資訊主管聯席會議暨智慧政府新航向發展論壇</h2>
+    </div>
+
+    <div id="side-menu" class="side-menu">
+        <a href="javascript:void(0)" class="close-btn" onclick="toggleMenu()">&times;</a>
+        <!-- Menu content from the image goes here -->
+        <a href="index.html">首頁</a>
+        <a href="game.html">破冰活動</a>
+        <a href="#">議題討論</a>
+        <a href="speech.html">專題講座</a>
+        <a href="end.html">策略總結</a>
+        <a href="#">活動照片</a>
+    </div>
+
+    <div class="main-content">
+        <div class="gameactivity-flow">
+            <h2 style="text-align:center; margin-top:15px; font-size:26px; color:#333;">活動內容</h2>
+        </div>
+
+        <div class="event-info" style="border-top: 2px solid #f9f9f9">
+            <div class="event-text">
+              <h2>✔️ 幫發展方向找個家 - 十宮格遊戲</h2>
+              <p>
+                第一輪遊戲介紹
+              </p>
+              &nbsp;&nbsp;&nbsp;&nbsp;aaaaa
+              <p>
+                第二輪遊戲介紹
+              </p>
+              &nbsp;&nbsp;&nbsp;&nbsp;aaaaa
+            </div>
+            <div class="event-image" >
+              <img src="./img/game1.png" alt="Event Image" style="width:100%; height:auto;">
+            </div>
+        </div>
+
+        <div class="event-info" style="border-top: 2px solid #f9f9f9; margin-bottom: 30px;" >
+            <div class="event-text">
+              <h2>✔️ 破冰短劇</h2>
+              <p>
+                (上)
+              </p>
+              <div style="padding-left: 20px;">
+                  眾神上台，共同說：我們是奧林帕斯山的眾神
+                  <br>神１：今天是智慧政府數位領航發展暨2023年全國資訊主管聯席會，全台灣的政府資訊菁英都在現場呀！
+                  <br>神２：為了台灣智慧政府3.0的發展，這些資訊菁英在自己的崗位上，一定有很多想解決的問題，以及想做的事情。
+                  <br>神３：那我們提供個許願池讓他們可以完成心願吧，他們下午好像有世界咖啡館的活動，就讓他們在那個活動中許願吧。
+                  <br>神４：我們可以給他們許願池，可是應該不是由我們眾神來幫他們完成吧。
+                  <br>神１：對阿，我們會給予這群菁英每個人神力，由他們許願並起一起完成。
+                  <br>神２：怎麼給他們神力呢？
+                  <br>神１：來人阿，把我的神力法器發給大家。
+                  <br>神１：大家都拿到神力了吧？現在大家舉起神力，跟著我高喊：“我許願，大家一起來實現。”
+
+              </div>
+              <p>
+                (下)
+              </p>
+              <div style="padding-left: 20px;">
+                神２：聽起來很有士氣，但是那他們要怎麼許願？
+                <br>神３：他們手上有三張許願單，是等一下他們會參加的３桌咖啡館的許願單，上面有寫著這桌咖啡館的發展方向，他們就以這發展方向去思考他們想解決的問題，和做甚麼來解決，然後唸給大家聽即可。
+                <br>神４：那看現場有沒有人立刻就想舉起神力試著許願？
+                <br>神１：來，請站到台前
+                <br>神１：請告訴大家你的許願
+                <br>神１：很棒，大家拿起神力對著他，一起說：「你許願，大家一起來實現」
+                <br>神１：希望大家從現在開始好好想要許甚麼願，下午在參加世界咖啡館的時候，都可以根據那桌的策略方向，踴躍的提出許願單許願，寫不夠還可以跟桌長拿。每輪咖啡館結束前都會讓組員進行許願投票，最後各桌三輪最高票的，會在今天總結時間上台頒獎，希望各位可以開始動動腦和準備用餐了。          
+              </div>
+            </div>
+            <div class="event-image">
+              <img src="./img/game2.png" alt="Event Image" style="width:100%; height:auto;">
+              <img src="./img/game3.png" alt="Event Image" style="width:100%; height:auto; margin-top: 180px;">
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-row">
+              <p><strong>主辦單位：</strong>數位發展部</p>
+              <p><strong>執行單位：</strong>財團法人商業發展研究院</p>
+              <p><strong>聯絡人：</strong>陳啟元研究員、李雯婷經理</p>
+          </div>
+          <div class="footer-row">
+              <p><strong>電話：</strong>02-77074897 / 02-77074862</p>
+              <p><strong>電子信箱：</strong>claychen@cdri.org.tw / vivianli@cdri.org.tw</p>
+          </div>
+        </div>
+      </footer>
+
+      <script>
+        function toggleMenu() {
+          var menu = document.getElementById("side-menu");
+          if (menu.style.width === '240px') {
+            menu.style.width = '0';
+          } else {
+            menu.style.width = '240px';
+          }
+          var menuIcon = document.querySelector('.menu-icon');
+            if (menuIcon.style.display === 'none') {
+                menuIcon.style.display = 'block';
+            } else {
+                menuIcon.style.display = 'none';
+            }
+        }
+        document.addEventListener('click', function(event) {
+            var sideMenu = document.getElementById('side-menu');
+            var menuIcon = document.querySelector('.menu-icon');
+        
+            if (!menuIcon.contains(event.target) && sideMenu.style.width === '240px') {
+                sideMenu.style.width = '0';
+                menuIcon.style.display = 'block';
+            }
+        });
+        </script>
+</body>
+</html>
