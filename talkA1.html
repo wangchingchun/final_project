@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Webpage Example</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/game.css">
+    <link rel="stylesheet" type="text/css" href="css/talkA1.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <span class="menu-icon" onclick="toggleMenu()">&#9776;</span>
+        <h2>2023全國資訊主管聯席會議暨智慧政府新航向發展論壇</h2>
+    </div>
+
+    <div id="side-menu" class="side-menu">
+        <a href="javascript:void(0)" class="close-btn" onclick="toggleMenu()">&times;</a>
+        <!-- Menu content from the image goes here -->
+        <a href="index.html">首頁</a>
+        <a href="game.html">破冰活動</a>
+        <a href="talk.html">議題討論</a>
+        <a href="speech.html">專題講座</a>
+        <a href="end.html">策略總結</a>
+        <a href="#">活動照片</a>
+    </div>
+
+    <div class="main-content">
+        <!-- 新增的兩個内容區塊 -->
+        <div class="content-block">
+            <h3>發展方向1.個人化精準/主動服務</h3>
+        </div>
+
+        <div class="content-block">
+            <h3><li>如何針對需要主動服務的民眾提供切身服務</li>
+                <li>例如健康資料結合環保資料提供個人化差異服務 </li>
+            </h3>
+        </div>
+    <!-- 留言板部分 -->
+    <div class="comment-section">
+        <h3>許願池：</h3>
+        <div class="publish-box">
+            <a href="talkQ1.html" class="publish-link">許願</a> <!-- 将 "next_page.html" 替换成实际页面的 URL -->
+        </div>
+        <div class="message">
+            <div class="message-header">老劉</div>
+            <div class="message-content">這是一條示例留言內容。</div>
+        </div>
+    </div>
+        <!-- 其他内容區塊 -->
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-row">
+                <p><strong>主辦單位：</strong>數位發展部</p>
+                <p><strong>執行單位：</strong>財團法人商業發展研究院</p>
+                <p><strong>聯絡人：</strong>陳啟元研究員、李雯婷經理</p>
+            </div>
+            <div class="footer-row">
+                <p><strong>電話：</strong>02-77074897 / 02-77074862</p>
+                <p><strong>電子信箱：</strong>claychen@cdri.org.tw / vivianli@cdri.org.tw</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("side-menu");
+            if (menu.style.width === '240px') {
+                menu.style.width = '0';
+            } else {
+                menu.style.width = '240px';
+            }
+            var menuIcon = document.querySelector('.menu-icon');
+            if (menuIcon.style.display === 'none') {
+                menuIcon.style.display = 'block';
+            } else {
+                menuIcon.style.display = 'none';
+            }
+        }
+        document.addEventListener('click', function (event) {
+            var sideMenu = document.getElementById('side-menu');
+            var menuIcon = document.querySelector('.menu-icon');
+
+            if (!menuIcon.contains(event.target) && sideMenu.style.width === '240px') {
+                sideMenu.style.width = '0';
+                menuIcon.style.display = 'block';
+            }
+        });
+    </script>
+</body>
+
+</html>
