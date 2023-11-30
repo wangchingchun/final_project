@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>議題討論_事前</title>
+    <title>議題討論_事後</title>
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" type="text/css" href="css/game.css">
     <link rel="stylesheet" type="text/css" href="css/talk.css">
@@ -28,7 +28,9 @@
         <a href="end.html">策略總結</a>
         <a href="#">活動照片</a>
     </div>
-
+    <div class="gameactivity-flow">
+        <h2 style="text-align:center; margin-top:15px; font-size:26px; color:#333;">活動已結束</h2>
+    </div>
     <div class="main-content">
         <div class="main-title-1">
             <h2>願景:數位賦能、共創共享、打造便捷高效的智慧政府</h2>
@@ -44,16 +46,16 @@
             <h2 style="text-align:center; margin-top:15px; font-size:26px; color:#333;">議題討論</h2>
         </div>
         <div class="grid-container">
-            <a href="#" class="grid-item item1 grid-link">發展方向1.個人化精準/主動服務</a>
-            <a href="#" class="grid-item item2 grid-link">發展方向2.強化政府資料分享機制 </a>
-            <a href="#" class="grid-item item3 grid-link">發展方向3.聚合式協力服務 </a>
-            <a href="#" class="grid-item item4 grid-link">發展方向4.個人資料自主管理 </a>
-            <a href="#" class="grid-item item5 grid-link">發展方向5.建設多元識別機制，提供人機結合的便捷服務</a>
-            <a href="#" class="grid-item item6 grid-link">發展方向6.善用AI技術提升政府運作效率 </a>
-            <a href="#" class="grid-item item7 grid-link">發展方向7.數位代理人</a>
-            <a href="#" class="grid-item item8 grid-link">發展方向8.無所不在的辦公環境</a>
-            <a href="#" class="grid-item item9 grid-link">發展方向9.政府訊息的驗證與信任機制 </a>
-            <a href="#" class="grid-item item10 grid-link">發展方向10.平衡發展數位轉型成熟度 </a>
+            <a href="talk_af1.html" class="grid-item item1 grid-link">發展方向1.個人化精準/主動服務</a>
+            <a href="talk_af2.html" class="grid-item item2 grid-link">發展方向2.強化政府資料分享機制 </a>
+            <a href="talk_af3.html" class="grid-item item3 grid-link">發展方向3.聚合式協力服務 </a>
+            <a href="talk_af4.html" class="grid-item item4 grid-link">發展方向4.個人資料自主管理 </a>
+            <a href="talk_af5.html" class="grid-item item5 grid-link">發展方向5.建設多元識別機制，提供人機結合的便捷服務</a>
+            <a href="talk_af6.html" class="grid-item item6 grid-link">發展方向6.善用AI技術提升政府運作效率 </a>
+            <a href="talk_af7.html" class="grid-item item7 grid-link">發展方向7.數位代理人</a>
+            <a href="talk_af8.html" class="grid-item item8 grid-link">發展方向8.無所不在的辦公環境</a>
+            <a href="talk_af9.html" class="grid-item item9 grid-link">發展方向9.政府訊息的驗證與信任機制 </a>
+            <a href="talk_af10.html" class="grid-item item10 grid-link">發展方向10.平衡發展數位轉型成熟度 </a>
           </div>
     </div>
 
@@ -95,20 +97,6 @@
                 menuIcon.style.display = 'block';
             }
         });
-        //計時器
-        function checkTimeAndRedirect() {
-            var now = new Date();
-            var currentHour = now.getHours(); // 獲取當前小時數
-            var currentMinutes = now.getMinutes(); // 獲取當前分鐘數
-
-            // 檢查當前時間是否等於或超過下午 9:30
-            var redirectToTalk = currentHour > 21 || (currentHour === 21 && currentMinutes >= 30);
-
-            var targetUrl = redirectToTalk ? 'talk.html' : 'talk_bf.html'; // 根據時間設置目標 URL
-            window.location.href = targetUrl; // 重定向到目標 URL
-        }
-
-        checkTimeAndRedirect(); // 呼叫函數以檢查時間並重定向
     </script>
 </body>
 
