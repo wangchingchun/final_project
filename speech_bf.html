@@ -82,6 +82,20 @@
                 menuIcon.style.display = 'block';
             }
         });
+        //計時器
+        function checkTimeAndRedirect() {
+            var now = new Date();
+            var currentHour = now.getHours(); // 獲取當前小時數
+            var currentMinutes = now.getMinutes(); // 獲取當前分鐘數
+
+            // 檢查當前時間是否等於或超過下午 9:30
+            var redirectToTalk = currentHour > 8 || (currentHour === 8 && currentMinutes >= 55);
+
+            var targetUrl = redirectToTalk ? 'speech_bf.html' : 'speech.html'; // 根據時間設置目標 URL
+            window.location.href = targetUrl; // 重定向到目標 URL
+        }
+
+        checkTimeAndRedirect(); // 呼叫函數以檢查時間並重定向
         </script>
 </body>
 </html>
