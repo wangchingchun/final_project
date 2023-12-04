@@ -134,7 +134,7 @@
             var currentMinutes = now.getMinutes(); // 獲取當前分鐘數
 
             // 檢查當前時間是否等於或超過下午 9:30
-            var redirectToTalk = currentHour > 12 || (currentHour === 12 && currentMinutes >= 0);
+            var redirectToTalk = currentHour > 12 || (currentHour === 12 && currentMinutes === 0);
 
             var targetUrl = redirectToTalk ? 'game.html' : 'game_af.html'; // 根據時間設置目標 URL
             window.location.href = targetUrl; // 重定向到目標 URL

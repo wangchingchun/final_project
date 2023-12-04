@@ -89,7 +89,7 @@
             var currentMinutes = now.getMinutes(); // 獲取當前分鐘數
 
             // 檢查當前時間是否等於或超過下午 9:30
-            var redirectToTalk = currentHour > 15 || (currentHour === 15 && currentMinutes >= 0);
+            var redirectToTalk = currentHour > 15 || (currentHour === 15 && currentMinutes === 0);
 
             var targetUrl = redirectToTalk ? 'end.html' : 'end_af.html'; // 根據時間設置目標 URL
             window.location.href = targetUrl; // 重定向到目標 URL
