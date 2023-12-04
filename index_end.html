@@ -11,6 +11,7 @@
 <div class="header">
   <span class="menu-icon" onclick="toggleMenu()">&#9776;</span>
   <h2>2023全國資訊主管聯席會議暨智慧政府新航向發展論壇</h2>
+  <span><b>活動已結束，明年再相見...</b></span>
 </div>
 
 <div id="side-menu" class="side-menu">
@@ -130,21 +131,6 @@ document.addEventListener('click', function(event) {
         menuIcon.style.display = 'block';
     }
 });
-
-//計時器
-function checkTimeAndRedirect() {
-    var now = new Date();
-    var currentHour = now.getHours(); // 獲取當前小時數
-    var currentMinutes = now.getMinutes(); // 獲取當前分鐘數
-
-    // 檢查當前時間是否超過晚上 11 點
-    var redirectToIndexEnd = currentHour >= 23;
-
-    var targetUrl = redirectToIndexEnd ? 'index_end.html' : 'index.html'; // 根據時間設置目標 URL
-    window.location.href = targetUrl; // 重定向到目標 URL
-}
-checkTimeAndRedirect();
-
 </script>
 
 </body>
