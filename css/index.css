@@ -12,6 +12,24 @@ body, html {
   position: relative; /* Added to position the menu-icon absolutely within the header */
   }
 
+  .header_ing {
+    background: rgb(162, 218, 205, 0.804);
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    text-align: center;
+    border-bottom: 2px solid black;
+    position: relative; /* Added to position the menu-icon absolutely within the header */
+    }
+
+    .header_af {
+      background: rgba(187, 218, 150, 0.804);
+      color: rgb(0, 0, 0);
+      padding: 5px;
+      text-align: center;
+      border-bottom: 2px solid black;
+      position: relative; /* Added to position the menu-icon absolutely within the header */
+      }
+
   .menu-icon {
     font-size: 30px; /* Increase the size as needed */
     position: absolute;
