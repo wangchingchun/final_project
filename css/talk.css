@@ -13,8 +13,8 @@
   .main-title-1{
     text-align: center; 
     margin-bottom: 30px; /* 标题和内容之间的间隔 */
-    border: 3px solid rgb(255, 89, 0);
-    background-color: #e4d597;
+    border: 3px solid #fca000;
+    background-color: #ffeb94;
   }
   .main-title-2 {
     text-align: center; /* 置中标题 */
@@ -34,18 +34,18 @@
   }
   
   .box-1 {
-    border: 3px solid #f6ae2d; /* 橙色边框 */
-    background-color: #f6ae2d; /* 橙色背景 */
+    border: 3px solid #f2d58e; /* 橙色边框 */
+    background-color: #f2d58e; /* 橙色背景 */
   }
   
   .box-2 {
-    border: 3px solid #758e4f; /* 绿色边框 */
-    background-color: #758e4f; /* 绿色背景 */
+    border: 3px solid #84a59d; /* 绿色边框 */
+    background-color: #84a59d; /* 绿色背景 */
   }
   
   .box-3 {
-    border: 3px solid #86bbd8; /* 蓝色边框 */
-    background-color: #86bbd8; /* 蓝色背景 */
+    border: 3px solid #b6cbe0; /* 蓝色边框 */
+    background-color: #b6cbe0; /* 蓝色背景 */
   }
   
   .content {
@@ -84,13 +84,13 @@
   }
   
   /* 调整每个项目的网格区域 */
-  .item1 { grid-column: 1 / 2; grid-row: 1 / 2; border: 3px solid #f6ae2d; }
-  .item2 { grid-column: 2 / 3; grid-row: 1 / 2; border: 3px solid #758e4f; }
-  .item3 { grid-column: 3 / 4; grid-row: 1 / 2; border: 3px solid #758e4f; }
-  .item4 { grid-column: 1 / 2; grid-row: 2 / 3; border: 3px solid #86bbd8;}
-  .item5 { grid-column: 2 / 3; grid-row: 2 / 3; border: 3px solid #f6ae2d; }
-  .item6 { grid-column: 3 / 4; grid-row: 2 / 3; border: 3px solid #758e4f; }
-  .item7 { grid-column: 1 / 2; grid-row: 3 / 4; border: 3px solid #86bbd8;}
-  .item8 { grid-column: 2 / 3; grid-row: 3 / 4; border: 3px solid #f6ae2d; }
-  .item9 { grid-column: 3 / 4; grid-row: 3 / 4; border: 3px solid #758e4f; }
-  .item10 { grid-column: 1 / 4; grid-row: 4 / 5; border: 3px solid #86bbd8;} /* 第十个项目占据最后一行所有列 */
+  .item1 { grid-column: 1 / 2; grid-row: 1 / 2; border: 3px solid #f2d58e; }
+  .item2 { grid-column: 2 / 3; grid-row: 1 / 2; border: 3px solid #84a59d; }
+  .item3 { grid-column: 3 / 4; grid-row: 1 / 2; border: 3px solid #84a59d; }
+  .item4 { grid-column: 1 / 2; grid-row: 2 / 3; border: 3px solid #b6cbe0;}
+  .item5 { grid-column: 2 / 3; grid-row: 2 / 3; border: 3px solid #f2d58e; }
+  .item6 { grid-column: 3 / 4; grid-row: 2 / 3; border: 3px solid #84a59d; }
+  .item7 { grid-column: 1 / 2; grid-row: 3 / 4; border: 3px solid #b6cbe0;}
+  .item8 { grid-column: 2 / 3; grid-row: 3 / 4; border: 3px solid #f2d58e; }
+  .item9 { grid-column: 3 / 4; grid-row: 3 / 4; border: 3px solid #84a59d; }
+  .item10 { grid-column: 1 / 4; grid-row: 4 / 5; border: 3px solid #b6cbe0;} /* 第十个项目占据最后一行所有列 */
