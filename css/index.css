@@ -13,7 +13,7 @@ body, html {
   }
 
   .header_ing {
-    background: rgb(162, 218, 205, 0.804);
+    background: rgba(244, 225, 129, 0.783);
     color: rgb(0, 0, 0);
     padding: 5px;
     text-align: center;
@@ -22,7 +22,7 @@ body, html {
     }
 
     .header_af {
-      background: rgba(187, 218, 150, 0.804);
+      background: rgba(205, 206, 204, 0.804);
       color: rgb(0, 0, 0);
       padding: 5px;
       text-align: center;
